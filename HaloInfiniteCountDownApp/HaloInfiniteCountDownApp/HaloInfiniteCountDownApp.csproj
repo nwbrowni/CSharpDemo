@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="HaloInfinite117.jpg" />
+    <None Remove="HaloInfiniteImage2.jpg" />
+    <None Remove="HaloInfiniteMarines.jpg" />
+    <None Remove="HaloInfiniteMasterChief.jpg" />
+    <None Remove="HaloInfiniteRing.png" />
+    <None Remove="HaloInfiniteSpartanHelmet.png" />
+    <None Remove="HaloInfiniteTitleCard.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="HaloInfinite117.jpg" />
+    <Resource Include="HaloInfiniteImage2.jpg" />
+    <Resource Include="HaloInfiniteMarines.jpg" />
+    <Resource Include="HaloInfiniteMasterChief.jpg" />
+    <Resource Include="HaloInfiniteRing.png" />
+    <Resource Include="HaloInfiniteSpartanHelmet.png" />
+    <Resource Include="HaloInfiniteTitleCard.jpg" />
+  </ItemGroup>
+
+</Project>

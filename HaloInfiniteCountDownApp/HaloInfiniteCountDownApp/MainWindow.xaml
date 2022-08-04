@@ -1,0 +1,157 @@
+﻿<Window x:Class="HaloInfiniteCountDownApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HaloInfiniteCountDownApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="#181735">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0f0f2d"
+              Grid.ColumnSpan="2"
+              Visibility="Visible"
+              MouseDown="Grid_MouseDown">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="TitleTextBlock"
+                       Text="HALO INFINITE RELEASE COUNTDOWN"
+                       Foreground="White"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="5"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="Calibri"
+                       FontSize="22"/>
+
+            <!-- Close Button -->
+            <Button Name="CloseButton"
+                    Foreground="White"
+                    FontSize="22"
+                    Grid.Column="9"
+                    Grid.ColumnSpan="1"
+                    Click="CloseButton_Click">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="Calibri"/>
+                        <Setter Property="Background" Value="#FF4C70"/>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Height="40"
+                                Width="70"
+                                CornerRadius="10"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"
+                                              Content="Close"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </Grid>
+
+        <!-- Image Panels -->
+        <StackPanel Name="ImagePanel1"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+            <Image Name="MarinesImage"
+                   Source="/HaloInfiniteMarines.jpg"
+                   Visibility="Hidden"/>
+        </StackPanel>
+
+        <StackPanel Name="ImagePanel2"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+            <Image Name="RingImage"
+                   Source="/HaloInfiniteRing.png"
+                   Visibility="Hidden"/>
+        </StackPanel>
+
+        <StackPanel Name="ImagePanel3"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+            <Image Name="SpartanHelmetImage"
+                   Source="/HaloInfiniteSpartanHelmet.png"
+                   Visibility="Hidden"/>
+        </StackPanel>
+
+        <StackPanel Name="ImagePanel4"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+            <Image Name="MasterChiefImage"
+                   Source="/HaloInfiniteMasterChief.jpg"
+                   Panel.ZIndex="1"
+                   Visibility="Visible"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="DaysTillReleaseHeaderTextBlock"
+                       Text=" Releases in:"
+                       Height="55"
+                       FontFamily="Calibri"
+                       FontSize="44"
+                       FontWeight="light"
+                       Foreground="White"
+                       Background="#181735"
+                       Visibility="Visible"
+                       Margin="20, 0, 10, 0"
+                       VerticalAlignment="Top"
+                       Grid.Row="3"/>
+
+            <TextBlock Name="DaysTillReleaseTextBlock"
+                       Text=" days hrs min s"
+                       Height="55"
+                       FontFamily="Calibri"
+                       FontSize="44"
+                       FontWeight="Light"
+                       Foreground="White"
+                       Background="#181735"
+                       Visibility="Visible"
+                       Margin="20, 0, 10, 10"
+                       VerticalAlignment="Bottom"
+                       Grid.Row="3"/>
+
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9vD9xktWFsozYTOdpMWRDBxghBShxCM2QsYKZbBTK5AASpxbOnrqn+NlKVcYt9hFqS47rz1pBVFBLcH2QSoCSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\famil\\source\\repos\\HaloInfiniteCountDownApp\\HaloInfiniteCountDownApp\\HaloInfiniteCountDownApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\famil\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
